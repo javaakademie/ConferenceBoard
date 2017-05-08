@@ -6,10 +6,10 @@ Bei dieser Anwendung handelt es sich um ein Beispiel für eine auf Java-Modulen 
 </p>
 
 Die Anwendung besteht aus den folgenden vier Modulen:
-- GUI-Modul (de.javaakademie.cb.gui)
-- Speaker-Modul (de.javaakademie.cb.speaker)
-- Sessions-Modul (de.javaakademie.cb.sessions) 
-- API-Modul (de.javaakademie.cb.api)
+- GUI-Modul (*de.javaakademie.cb.gui*)
+- Speaker-Modul (*de.javaakademie.cb.speaker*)
+- Sessions-Modul (*de.javaakademie.cb.sessions*) 
+- API-Modul (*de.javaakademie.cb.api*)
 
 Das GUI-Modul fungiert dabei als Servie-Consumer, die beiden Module Speaker und Sessions als Service-Provider-Module und das API-Modul enthält das Service-Provider-Interface (SPI). Die Oberfläche der Anwendung wurde mit JavaFX umgesetzt.
 
@@ -23,19 +23,17 @@ Die Module sind orientierend an einer Schichtenarchitektur und den Fachdomänen 
 ###  Von der Konsole aus Bauen und Starten ### 
 
 Kompilieren und Bauen der Anwendung:
-
-**cd [Projektverzeichnis]**
-**mvn clean install**
+-**cd\[Projektverzeichnis]**
+-**mvn clean install**
 
 
 Starten der Anwendung:
-
-**java -p modules -m de.javaakademie.cb.gui/de.javaakademie.cb.gui.App**
+-**java -p modules -m de.javaakademie.cb.gui/de.javaakademie.cb.gui.App**
 
 
 ###  Von eclipse aus Bauen und Starten ### 
 
-Im Verzeicnis des GUI-Moduls liegt die Datei *App.launch* für zusätzliche "*Run Configurations*".
+Im Verzeicnis des GUI-Moduls liegt die Datei **App.launch** für zusätzliche "**Run Configurations**".
 Mit dieser Datei können die Configurations in eclipse imoprtiert werden oder manuell eingegebn werden:
 
 <p align="center"><br/>
