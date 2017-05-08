@@ -23,7 +23,7 @@ Die Module sind orientierend an einer Schichtenarchitektur und den Fachdomänen 
 ###  Von der Konsole aus Bauen und Starten ### 
 
 Kompilieren und Bauen der Anwendung:<br/>
-**cd\[Projektverzeichnis]**<br/>
+**cd [Projektverzeichnis]**<br/>
 **mvn clean install**
 
 Starten der Anwendung<br/>
