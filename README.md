@@ -22,12 +22,11 @@ Die Module sind orientierend an einer Schichtenarchitektur und den Fachdomänen 
 
 ###  Von der Konsole aus Bauen und Starten ### 
 
-Kompilieren und Bauen der Anwendung
-**cd\[Projektverzeichnis]**
+Kompilieren und Bauen der Anwendung:<br/>
+**cd\[Projektverzeichnis]**<br/>
 **mvn clean install**
 
-
-Starten der Anwendung
+Starten der Anwendung<br/>
 **java -p modules -m de.javaakademie.cb.gui/de.javaakademie.cb.gui.App**
 
 
