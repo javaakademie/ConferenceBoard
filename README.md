@@ -1,7 +1,6 @@
 # ConferenceBoard
 
 Bei dieser Anwendung handelt es sich um ein Beispiel für eine auf Java-Modulen basierten Anwendung. Es handelt sich um ein Tool zur Verwaltung von Sessions und Speakern einer Konferenz. Die Anwendung ist im Zuge eines Vortrages auf der JAX 2017 entstanden und basiert auf einer Java 9 Vorabversion (jdk-9_166), der eclipse Vorabversion Oxygen Release Milestone 6 (4.7.0 M6) und Maven 3.3.9. Da zum Zeitpunkt der Programmerstellung Java 9 noch nicht final war, könnten zu einem späteren Zeitpunkt der Verwendung noch Anpassungen notwendig sein.
-
 <p align="center"><br/>
   <img src="https://github.com/javaakademie/ConferenceBoard/blob/master/preview.png" border="0">
 </p>
