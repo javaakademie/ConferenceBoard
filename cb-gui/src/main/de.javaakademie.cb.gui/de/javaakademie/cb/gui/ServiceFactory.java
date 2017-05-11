@@ -7,6 +7,7 @@ import de.javaakademie.cb.api.ConferenceService;
 import de.javaakademie.cb.api.annotation.Sessions;
 import de.javaakademie.cb.api.annotation.Speaker;
 import de.javaakademie.cb.api.model.Session;
+import java.util.ServiceLoader.Provider;
 
 /**
  * ServiceFactory.
@@ -19,10 +20,10 @@ public class ServiceFactory {
 	private ServiceLoader<ConferenceService> services = ServiceLoader.load(ConferenceService.class);
 
 	private ConferenceService<?> getServiceByAnnotation(Class clazz) {
-		Optional<ConferenceService> service = services.stream()
-				.filter(provider -> provider.type().isAnnotationPresent(clazz)).map(ServiceLoader.Provider::get)
-				.findAny();
-		return service.get();
+		Optional<ConferenceService> providers = services.stream()
+				.filter(provider -> provider.type().isAnnotationPresent(clazz)).map(Provider::get).findFirst();
+		services.reload(); // TODO
+		return providers.get();
 	}
 
 	public ConferenceService<de.javaakademie.cb.api.model.Speaker> getSpeakerService() {
