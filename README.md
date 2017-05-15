@@ -11,7 +11,7 @@ Die Anwendung besteht aus den folgenden vier Modulen:
 - Sessions-Modul (*de.javaakademie.cb.sessions*) 
 - API-Modul (*de.javaakademie.cb.api*)
 
-Das GUI-Modul fungiert dabei als Servie-Consumer, die beiden Module Speaker und Sessions als Service-Provider-Module und das API-Modul enthält das Service-Provider-Interface (SPI). Die Oberfläche der Anwendung wurde mit JavaFX umgesetzt.
+Das GUI-Modul fungiert dabei als Servie-Consumer, die beiden Module Speaker und Sessions als Service-Provider-Module und das API-Modul enthält das Service-Provider-Interface (SPI). Das Model wurde der einfachheit halber ebenfalls im API-Modul verpackt, um das Beispiel übersichtlicher zu halten, anstatt hierfür ein eigenes Modul anzulegen. Die Oberfläche der Anwendung wurde mit JavaFX umgesetzt.
 
 Die Module sind orientierend an einer Schichtenarchitektur und den Fachdomänen wie folgt geschnitten:
 
