@@ -33,7 +33,7 @@ Starten der Anwendung<br/>
 ###  Von eclipse aus Bauen und Starten ### 
 
 Im Verzeicnis des GUI-Moduls liegt die Datei **App.launch** für zusätzliche "**Run Configurations**".
-Mit dieser Datei können die Configurations in eclipse imoprtiert werden oder manuell eingegebn werden:
+Mit dieser Datei können die Configurations in eclipse imoprtiert werden oder manuell eingegeben werden:
 
 <p align="center"><br/>
   <img src="https://github.com/javaakademie/ConferenceBoard/blob/master/runConfigurations.png" border="0">
