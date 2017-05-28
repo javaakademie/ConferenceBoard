@@ -43,5 +43,6 @@ Mit dieser Datei können die Configurations in eclipse imoprtiert werden oder ma
 ## Links ##
 
 * [JDK 9 Early-Access Build](https://jdk.java.net/9/)
+* [Eclipse Oxygen Milestone 7 mit JDK 9](http://javaakademie.de/blog/java-9-ea-oxygen)
 * [Java 9 API Specification](http://download.java.net/java/jdk9/docs/api/overview-summary.html)
 * [Vortrag JAX: Die Welt ist modular](https://jax.de/session/die-welt-ist-modular/)
