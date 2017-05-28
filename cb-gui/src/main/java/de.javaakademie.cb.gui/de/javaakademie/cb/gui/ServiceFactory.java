@@ -18,18 +18,23 @@ public class ServiceFactory {
 
 	private ServiceLoader<ConferenceService> services = ServiceLoader.load(ConferenceService.class);
 
-	private ConferenceService<?> getServiceByAnnotation(Class clazz) {
+	private ConferenceService<?> getServiceByAnnotation(Class annotation) throws ClassNotFoundException {
 		Optional<ConferenceService> service = services.stream()
-				.filter(provider -> provider.type().isAnnotationPresent(clazz)).map(ServiceLoader.Provider::get)
-				.findAny();
-		return service.get();
+				.filter(provider -> provider.type().isAnnotationPresent(annotation)).map(ServiceLoader.Provider::get)
+				.findFirst();
+		services.reload();
+		if (service.isPresent()) {
+			return service.get();
+		} else {
+			throw new ClassNotFoundException(annotation.getName() + "Service not found.");
+		}
 	}
 
-	public ConferenceService<de.javaakademie.cb.api.model.Speaker> getSpeakerService() {
+	public ConferenceService<de.javaakademie.cb.api.model.Speaker> getSpeakerService() throws ClassNotFoundException {
 		return (ConferenceService<de.javaakademie.cb.api.model.Speaker>) getServiceByAnnotation(Speaker.class);
 	}
 
-	public ConferenceService<Session> getSessionService() {
+	public ConferenceService<Session> getSessionService() throws ClassNotFoundException {
 		return (ConferenceService<Session>) getServiceByAnnotation(Sessions.class);
 	}
 

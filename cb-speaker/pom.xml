@@ -20,7 +20,7 @@
     </dependencies>
 	
     <build>
-        <sourceDirectory>src\main\de.javaakademie.cb.speaker</sourceDirectory>
+        <sourceDirectory>src\main\java\de.javaakademie.cb.speaker</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

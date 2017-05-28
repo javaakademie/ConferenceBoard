@@ -20,10 +20,10 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>src\main\de.javaakademie.cb.gui</sourceDirectory>
+        <sourceDirectory>src\main\java\de.javaakademie.cb.gui</sourceDirectory>
 		<resources>
 			<resource>
-				<directory>src\main\de.javaakademie.cb.gui</directory>
+				<directory>src\mainjava\\de.javaakademie.cb.gui</directory>
 				<excludes>
 					<exclude>**/*.java</exclude>				
 				</excludes>

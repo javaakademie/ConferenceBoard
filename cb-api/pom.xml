@@ -13,7 +13,7 @@
     <artifactId>cb-api</artifactId>
 
     <build>
-        <sourceDirectory>src\main\de.javaakademie.cb.api</sourceDirectory>
+        <sourceDirectory>src\main\java\de.javaakademie.cb.api</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -61,8 +61,13 @@ public class MainController implements Initializable {
 
 	public void initialize(URL location, ResourceBundle resources) {
 		serviceFactory = new ServiceFactory();
-		speakerService = serviceFactory.getSpeakerService();
-		sessionService = serviceFactory.getSessionService();
+		try {
+			speakerService = serviceFactory.getSpeakerService();
+			sessionService = serviceFactory.getSessionService();
+		} catch (ClassNotFoundException e) {
+			System.out.println(e.getMessage());
+			System.exit(0);
+		}
 		initTestData();
 		initToolbar();
 		initActionButtons();
