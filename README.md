@@ -11,7 +11,7 @@ Die Anwendung besteht aus den folgenden vier Modulen:
 - Sessions-Modul (*de.javaakademie.cb.sessions*) 
 - API-Modul (*de.javaakademie.cb.api*)
 
-Das GUI-Modul fungiert dabei als Servie-Consumer, die beiden Module Speaker und Sessions als Service-Provider-Module und das API-Modul enthält das Service-Provider-Interface (SPI). Die Oberfläche der Anwendung wurde mit JavaFX umgesetzt.
+Das GUI-Modul fungiert dabei als Servie-Consumer, die beiden Module Speaker und Sessions als Service-Provider-Module und das API-Modul enthält das Service-Provider-Interface (SPI). Das Model wurde der einfachheit halber ebenfalls im API-Modul verpackt, um das Beispiel übersichtlicher zu halten, anstatt hierfür ein eigenes Modul anzulegen. Die Oberfläche der Anwendung wurde mit JavaFX umgesetzt.
 
 Die Module sind orientierend an einer Schichtenarchitektur und den Fachdomänen wie folgt geschnitten:
 
@@ -33,7 +33,7 @@ Starten der Anwendung<br/>
 ###  Von eclipse aus Bauen und Starten ### 
 
 Im Verzeicnis des GUI-Moduls liegt die Datei **App.launch** für zusätzliche "**Run Configurations**".
-Mit dieser Datei können die Configurations in eclipse imoprtiert werden oder manuell eingegebn werden:
+Mit dieser Datei können die Configurations in eclipse imoprtiert werden oder manuell eingegeben werden:
 
 <p align="center"><br/>
   <img src="https://github.com/javaakademie/ConferenceBoard/blob/master/runConfigurations.png" border="0">
